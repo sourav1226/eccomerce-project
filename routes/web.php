@@ -1,36 +1,31 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
 
 Route::get('/', function () {
     return view('frontend.index');
 });
 
-Route::get('/shop', function () {
-    return view('frontend.shop');
-});
-Route::get('/shop-details', function () {
-    return view('frontend.details');
-});
-Route::get('/cart', function () {
-    return view('frontend.cart');
-});
-Route::get('/checkout', function () {
-    return view('frontend.checkout');
-});
-Route::get('/contact', function () {
-    return view('frontend.contact');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
-// admin
-
-// end-admin
-
-
-
-// frontend
-
-// end-frontend
-
-
+require __DIR__.'/auth.php';
