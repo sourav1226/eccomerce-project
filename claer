@@ -1,0 +1,29 @@
+[33mcommit 154ed7101dfe94b802e49fb0782244036056f6f8[m[33m ([m[1;36mHEAD -> [m[1;32mdeva[m[33m, [m[1;31morigin/deva[m[33m)[m
+Author: sourav <souravghosh1226@gmail.com>
+Date:   Mon Mar 6 12:42:28 2023 +0530
+
+    add admin table seeder
+
+[33mcommit 910b38f74c03ce0adb3b6dad327d77f8f86ad4cb[m
+Author: sourav <souravghosh1226@gmail.com>
+Date:   Sun Mar 5 12:49:55 2023 +0530
+
+    ignore file change
+
+[33mcommit fc16baf6e3e5d549948b1020897db7ae3c307638[m
+Author: sourav <souravghosh1226@gmail.com>
+Date:   Sun Mar 5 12:11:30 2023 +0530
+
+    add breze pack
+
+[33mcommit acb3834a1a6f612682fc3491fd21840b646baa5d[m
+Author: sourav <souravghosh1226@gmail.com>
+Date:   Sun Mar 5 11:53:27 2023 +0530
+
+    add file in git ignore
+
+[33mcommit 8b3eedc20560e9ac55cf3175c003459420231785[m
+Author: sourav <souravghosh1226@gmail.com>
+Date:   Sun Mar 5 11:50:24 2023 +0530
+
+    first commit
